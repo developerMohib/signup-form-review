@@ -13,7 +13,7 @@ type SignupFormProps = {
 type Errors = Partial<Record<'name' | 'email' | 'password' | 'acceptTerms' | 'form', string>>
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const MIN_PASSWORD_LENGTH = 8
+const MIN_PASSWORD_LENGTH = 6
 
 export function SignupForm({ onSubmit }: SignupFormProps) {
   const [values, setValues] = useState({
